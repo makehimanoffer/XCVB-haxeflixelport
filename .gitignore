@@ -1,0 +1,9 @@
+# Haxe/OpenFL/Flixel garbage
+export/
+obj/
+bin/
+.haxelib/
+.vscode/
+*.pyc
+Desktop.ini
+.DS_Store
