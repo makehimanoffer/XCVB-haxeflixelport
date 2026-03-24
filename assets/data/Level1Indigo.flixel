@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map Id="Untitled">
+  <Description><![CDATA[]]></Description>
+  <TileSheets>
+    <TileSheet Id="End">
+      <Description><![CDATA[]]></Description>
+      <ImageSource><![CDATA[..\graphics\TileEndingMap.png]]></ImageSource>
+      <Alignment SheetSize="2 x 1" TileSize="32 x 32" Margin="0 x 0" Spacing="0 x 0" />
+      <Properties />
+    </TileSheet>
+    <TileSheet Id="Indigo">
+      <Description><![CDATA[]]></Description>
+      <ImageSource><![CDATA[..\graphics\TileMapIndigo.png]]></ImageSource>
+      <Alignment SheetSize="11 x 1" TileSize="32 x 32" Margin="0 x 0" Spacing="0 x 0" />
+      <Properties />
+    </TileSheet>
+  </TileSheets>
+  <Layers>
+    <Layer Id="Level" Visible="True">
+      <Description><![CDATA[]]></Description>
+      <Dimensions LayerSize="20 x 20" TileSize="32 x 32" />
+      <TileData TileSheet="Indigo" Filename="C:\Users\David\Documents\Super XCVB\src\org\flixel\data\private\texts\Level1Indigo_Level.txt" />
+      <Properties />
+    </Layer>
+    <Layer Id="Layer2" Visible="True">
+      <Description><![CDATA[]]></Description>
+      <Dimensions LayerSize="20 x 20" TileSize="32 x 32" />
+      <TileData TileSheet="End" Filename="C:\Users\David\Documents\Super XCVB\src\org\flixel\data\private\texts\Level1Indigo_Layer2.txt" />
+      <Properties />
+    </Layer>
+  </Layers>
+  <Properties />
+</Map>

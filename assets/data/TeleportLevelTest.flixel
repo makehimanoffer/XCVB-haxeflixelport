@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map Id="Untitled">
+  <Description><![CDATA[]]></Description>
+  <TileSheets>
+    <TileSheet Id="endgoal">
+      <Description><![CDATA[]]></Description>
+      <ImageSource><![CDATA[..\graphics\TileEndingMap.png]]></ImageSource>
+      <Alignment SheetSize="2 x 1" TileSize="32 x 32" Margin="0 x 0" Spacing="0 x 0" />
+      <Properties />
+    </TileSheet>
+    <TileSheet Id="mainset">
+      <Description><![CDATA[]]></Description>
+      <ImageSource><![CDATA[..\graphics\TileMapRedLayered.png]]></ImageSource>
+      <Alignment SheetSize="12 x 1" TileSize="32 x 32" Margin="0 x 0" Spacing="0 x 0" />
+      <Properties />
+    </TileSheet>
+  </TileSheets>
+  <Layers>
+    <Layer Id="TeleportLevel" Visible="True">
+      <Description><![CDATA[]]></Description>
+      <Dimensions LayerSize="20 x 20" TileSize="32 x 32" />
+      <TileData TileSheet="mainset" Filename="C:\Users\David\Documents\Super XCVB\src\org\flixel\data\private\texts\TeleportLevelTest_TeleportLevel.txt" />
+      <Properties />
+    </Layer>
+    <Layer Id="endGoal" Visible="True">
+      <Description><![CDATA[]]></Description>
+      <Dimensions LayerSize="20 x 20" TileSize="32 x 32" />
+      <TileData TileSheet="endgoal" Filename="C:\Users\David\Documents\Super XCVB\src\org\flixel\data\private\texts\TeleportLevelTest_endGoal.txt" />
+      <Properties />
+    </Layer>
+  </Layers>
+  <Properties />
+</Map>
