@@ -50,10 +50,10 @@ class Level1BAW extends FlxState
 
         // 4. Goals [cite: 6, 7]
         rainbowGoal = new BAWGoal(288, 160);
-        add(rainbowGoal);
+		add(rainbowGoal);
         
         blankGoal = new FlxSprite(288, 224, Sources.ImgBlankGoal);
-        add(blankGoal);
+		// add(blankGoal);
 
         // 5. Camera & World 
         FlxG.worldBounds.set(0, 0, map.width, map.height);

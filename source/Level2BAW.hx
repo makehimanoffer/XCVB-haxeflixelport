@@ -64,7 +64,7 @@ class Level2BAW extends FlxState
     
     // The blankGoal (Exit) is at x: 40, y: 192 
     blankGoal = new FlxSprite(40, 192, Sources.ImgBlankGoal);
-    add(blankGoal);
+		// add(blankGoal);
 
     // 9. Add Pause UI elements last
     add(pause);
