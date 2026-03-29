@@ -21,6 +21,11 @@ class Menu extends FlxState
 
     override public function create():Void
     {
+        // This hides the entire top-right debugger bar and bounding boxes
+        FlxG.debugger.visible = false;
+        FlxG.debugger.drawDebug = false;
+        // DEBUG: Force the game to think we've beaten at least 20 levels
+        LevelsCompleted.levels = 20;
         // Initialize Rules and reset pause state [cite: 16, 27]
         Rules.resetPause();
         rules = Rules.getInstanceRules();

@@ -48,6 +48,8 @@ class BaseLevel extends FlxState
 	private var _rotateRight:Bool = true;
 	private var _cameraMaxAngle:Float = 30;
 
+	// public var tileIndexOverride:Int = -1; // -1 means use the CSV's default tiles
+
 	override public function create():Void
 	{
 		// Initialize the Rules singleton and PauseScreen instance
@@ -65,6 +67,16 @@ class BaseLevel extends FlxState
 		// 2. Map setup
 		map = new FlxTilemap();
 		map.loadMapFromCSV(mapData, tileMapToUse, 32, 32);
+		// Check which image we are using to determine the tile logic
+		if (tileMapToUse == Sources.MapBAW) {
+			
+		}
+		else
+		{
+			//map.loadMapFromCSV(mapData, tileMapToUse, 32, 32, OFF, 0, 1, 1);
+			//map.setTileProperties(7, 0x1111, null, null, 6);
+		
+		}
 		add(map);
 
 		// 3. Player setup

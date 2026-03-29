@@ -3,14 +3,17 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 
-class Level4BAW extends BaseLevel
+class Level5BAW extends BaseLevel
 {
     override public function create():Void
     {
-        // 1. Define the unique coordinates and map for Level 4
-        mapData = Sources.L4BAW; // Kept this pointing to L3BAW as specified in your original source
+        // 1. Define the unique coordinates and map for Level 5
+        mapData = Sources.L5BAW;
         tileMapToUse = Sources.MapBAW;
-        GoalToUse = Sources.ImgBAWGoal;
+        
+        // In the AS3 file, it used a custom RainbowGoal object. 
+        // We pass the sprite here to match BaseLevel's setup.
+        GoalToUse = Sources.ImgRainbowGoal; 
         
         _colorWheel = false;
         emitterColors = [0xFFFFFFFF, 0xFF888888, 0xFF444444, 0xFF000000];
@@ -18,15 +21,15 @@ class Level4BAW extends BaseLevel
         playerStartX = 50;
         playerStartY = 50;
         
-        // Coordinates extracted from your original Level 4 file
-        rainbowX = 256;
-        rainbowY = 162;
+        // Coordinates extracted from your original AS3 file
+        rainbowX = 128;
+        rainbowY = 288;
         
-        blankX = 256;
-        blankY = 212;
+        blankX = 32;
+        blankY = 288;
         
-        // As dictated by your original file, completing this level kicks back to the main menu
-        nextLevel = Level5BAW;
+        // AS3 version pointed to Level1 (presumably starting the main game)
+        nextLevel = Level1;
 
         // 2. Initialize the Base Engine
         super.create();
@@ -45,7 +48,7 @@ class Level4BAW extends BaseLevel
     {
         super.update(elapsed);
         
-        // Custom trail logic like Levels 1, 2 and 3
+        // Custom trail logic like previous levels
         if (player.velocity.x != 0 || player.velocity.y != 0) {
             trail.loadGraphic(Sources.trailBAW);
         } else {
